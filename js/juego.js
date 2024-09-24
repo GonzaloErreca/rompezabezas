@@ -79,7 +79,7 @@ function chequearSiGano() {
 
 // Implementar alguna forma de mostrar un cartel que avise que ganaste el juego
 function mostrarCartelGanador() {
-  
+  alert("¡Felicitaciones! ¡Has ganado el juego!");
 }
 
 
@@ -293,7 +293,7 @@ function iniciar() {
     mostrarInstrucciones(instrucciones);
     mezclarPiezas(30);
     capturarTeclas();
-    chequearSiGano();
+    serTimeOut(chequearSiGano(),1000);
 }
 
 // Ejecutamos la función iniciar
