@@ -30,14 +30,20 @@ Podés ver su implementación en la ultima parte de este codigo. */
 function mostrarInstrucciones(instrucciones) {
     //COMPLETAR
     
+      // Recorre el arreglo de instrucciones
+      for (var i = 0; i < instrucciones.length; i++) {
+        // Muestra cada instrucción en la lista con id 'lista-instrucciones'
+        mostrarInstruccionEnLista(instrucciones[i], 'lista-instrucciones');
+      }
+       
     //esto es un ejemplo
-    var li = document.createElement("li");
+   /* var li = document.createElement("li");
     li.innerHTML = "test";
     document.getElementById("lista-instrucciones").append(li);
 
     for (var i = 0; i < instrucciones.length; i++){
 
-    }
+    }*/
    
       //se pasa el elemento del arreglo instrucciones y el ID del DIV padre 
       //que va a contener la UL 
